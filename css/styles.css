@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -15,8 +15,14 @@ header {
     margin-bottom: 20px;
 }
 
+header {
+    text-align: left; /* Align the h1 tag to the left */
+    margin-bottom: 20px;
+}
+
 h1 {
     font-size: 32px;
+    margin: 0; /* Remove any default margin for the h1 tag */
 }
 
 section {
