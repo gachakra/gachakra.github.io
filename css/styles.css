@@ -93,3 +93,22 @@ footer {
 .qr-code-img {
     max-width: 100%;
 }
+
+/* New styles for the images in the new section */
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* New styles for the images in the new section */
+.images-new-section {
+    display: flex;
+    flex-direction: column; /* Align images vertically */
+    align-items: center; /* Center images horizontally */
+    margin-top: 20px;
+}
+
+/*img {*/
+/*    max-width: 100%;*/
+/*}*/
