@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%; /* Ensure images scale properly */
+}
+
+/* Media query for screens with a maximum width of 768px (typical smartphone width) */
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images horizontally */
+    }
+
+    img {
+        max-width: 80%; /* Adjust the image width for better fit on smaller screens */
+        margin-bottom: 20px; /* Add space between images on smaller screens */
+    }
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 769px) {
+    .images {
+        flex-direction: row; /* Stack images vertically */
+        align-items: center; /* Center images horizontally */
+    }
+
+    img {
+        max-width: 45%;
+        margin-bottom: 20px; /* Add space between images on wider screens */
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
