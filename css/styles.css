@@ -154,8 +154,14 @@ footer {
 }
 
 .icon-list img {
-    width: 40px; /* Adjust the size of the icons as needed */
-    height: 40px;
+    width: 80px; /* Adjust the size of the icons as needed */
+}
+
+/* Media query for screens with a maximum width of 768px (typical smartphone width) */
+@media (max-width: 768px) {
+    .icon-list img {
+        max-width: 60%; /* Adjust the image width for better fit on smaller screens */
+    }
 }
 
 /*img {*/
