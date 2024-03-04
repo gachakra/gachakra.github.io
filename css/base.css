@@ -1,14 +1,32 @@
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.inner-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
 }
+
+.inner-full-width-container {
+    width: 90vw;
+    position: relative;
+    left: calc(-45vw + 50%);
+}
+
 
 header {
     text-align: left; /* Align the h1 tag to the left */
@@ -33,18 +51,18 @@ p {
     line-height: 1.6;
 }
 
-img {
+.business-card img {
     max-width: 100%; /* Ensure images scale properly */
 }
 
 /* Media query for screens with a maximum width of 768px (typical smartphone width) */
 @media (max-width: 768px) {
-    .images {
+    .business-card .images {
         flex-direction: column; /* Stack images vertically */
         align-items: center; /* Center images horizontally */
     }
 
-    img {
+    .business-card img {
         max-width: 80%; /* Adjust the image width for better fit on smaller screens */
         margin-bottom: 20px; /* Add space between images on smaller screens */
     }
@@ -52,12 +70,12 @@ img {
 
 /* Media query for screens wider than 768px */
 @media (min-width: 769px) {
-    .images {
+    .business-card .images {
         flex-direction: row; /* Stack images vertically */
         align-items: center; /* Center images horizontally */
     }
 
-    img {
+    .business-card img {
         max-width: 45%;
         margin-bottom: 20px; /* Add space between images on wider screens */
     }
@@ -84,7 +102,7 @@ footer {
 }
 
 /* New styles for the images in the new section */
-.images {
+.business-card .images {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -140,6 +158,13 @@ footer {
 
 .icon-list img {
     width: 80px; /* Adjust the size of the icons as needed */
+}
+
+@media (min-width: 769px) {
+    .icon-list img {
+        max-width: 45%;
+        margin-bottom: 20px; /* Add space between images on wider screens */
+    }
 }
 
 /* Media query for screens with a maximum width of 768px (typical smartphone width) */
