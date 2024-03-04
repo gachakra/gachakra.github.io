@@ -10,7 +10,7 @@
     margin-top: 20px;
 }
 
-.business-card-images img{
+.business-card-images img {
     max-width: 100%; /* Ensure images scale properly */
 }
 
@@ -29,16 +29,13 @@
 /* Media query for screens wider than 768px */
 @media (min-width: 769px) {
     .business-card-images img,
-    .sns-icons img
-
-    {
+    .sns-icons img {
         flex-direction: row; /* Stack images vertically */
         align-items: center; /* Center images horizontally */
     }
 
     .business-card-images img,
-    .sns-icons img
-    {
+    .sns-icons img {
         max-width: 45%;
         margin-bottom: 20px; /* Add space between images on wider screens */
     }

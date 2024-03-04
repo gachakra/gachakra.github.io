@@ -26,15 +26,27 @@ header {
     margin-bottom: 20px;
 }
 
+section {
+    margin-bottom: 30px;
+}
+
 h1 {
     font-size: 2rem;
     font-weight: bold;
 }
 
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 .description {
     width: 600px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 footer {
@@ -43,4 +55,16 @@ footer {
     margin-top: 50px;
     padding-top: 20px;
     border-top: 1px solid #ccc;
+}
+
+/* Center the QR code image within the section */
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0; /* Add spacing to the section */
+}
+
+.qr-code-img {
+    max-width: 100%;
 }
