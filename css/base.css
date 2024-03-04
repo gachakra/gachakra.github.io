@@ -1,24 +1,18 @@
-html {
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
 body {
-    padding: 0 24px;
-    /*color: #aaa;*/
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 header {
@@ -26,13 +20,13 @@ header {
     margin-bottom: 20px;
 }
 
-section {
-    margin-bottom: 30px;
+h1 {
+    font-size: 32px;
+    margin: 0; /* Remove any default margin for the h1 tag */
 }
 
-h1 {
-    font-size: 2rem;
-    font-weight: bold;
+section {
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -44,9 +38,40 @@ p {
     line-height: 1.6;
 }
 
-.description {
-    width: 600px;
-    margin: 0 auto 20px;
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%; /* Ensure images scale properly */
+}
+
+/* Media query for screens with a maximum width of 768px (typical smartphone width) */
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images horizontally */
+    }
+
+    img {
+        max-width: 80%; /* Adjust the image width for better fit on smaller screens */
+        margin-bottom: 20px; /* Add space between images on smaller screens */
+    }
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 769px) {
+    .images {
+        flex-direction: row; /* Stack images vertically */
+        align-items: center; /* Center images horizontally */
+    }
+
+    img {
+        max-width: 45%;
+        margin-bottom: 20px; /* Add space between images on wider screens */
+    }
 }
 
 footer {
@@ -67,4 +92,70 @@ footer {
 
 .qr-code-img {
     max-width: 100%;
+}
+
+/* New styles for the images in the new section */
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* New styles for the images in the new section */
+.images-new-section {
+    display: flex;
+    flex-direction: column; /* Align images vertically */
+    align-items: center; /* Center images horizontally */
+    margin-top: 20px;
+}
+
+/* Enlarged image container */
+.enlarged-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Enlarged image */
+.enlarged-img img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.zoomable {
+    cursor: pointer;
+}
+
+/* Styles for SNS Icon Section */
+.sns-icons {
+    text-align: center;
+    margin: 100px 0 40px;
+}
+
+.icon-list {
+    margin-top: 20px;
+}
+
+.icon-list a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.icon-list img {
+    width: 80px; /* Adjust the size of the icons as needed */
+}
+
+/* Media query for screens with a maximum width of 768px (typical smartphone width) */
+@media (max-width: 768px) {
+    .icon-list img {
+        max-width: 60%; /* Adjust the image width for better fit on smaller screens */
+    }
 }
