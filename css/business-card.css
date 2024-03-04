@@ -1,0 +1,45 @@
+.business-card-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.business-card-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.business-card-images img{
+    max-width: 100%; /* Ensure images scale properly */
+}
+
+@media (max-width: 768px) {
+    .business-card-images {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images horizontally */
+    }
+
+    .business-card-images img {
+        max-width: 80%; /* Adjust the image width for better fit on smaller screens */
+        margin-bottom: 20px; /* Add space between images on smaller screens */
+    }
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 769px) {
+    .business-card-images img,
+    .sns-icons img
+
+    {
+        flex-direction: row; /* Stack images vertically */
+        align-items: center; /* Center images horizontally */
+    }
+
+    .business-card-images img,
+    .sns-icons img
+    {
+        max-width: 45%;
+        margin-bottom: 20px; /* Add space between images on wider screens */
+    }
+}

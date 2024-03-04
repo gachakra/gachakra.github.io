@@ -1,0 +1,25 @@
+/* Styles for SNS Icon Section */
+.sns-icons {
+    text-align: center;
+    margin: 100px 0 40px;
+}
+
+.icon-list {
+    margin-top: 20px;
+}
+
+.icon-list a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.icon-list img {
+    width: 80px; /* Adjust the size of the icons as needed */
+}
+
+/* Media query for screens with a maximum width of 768px (typical smartphone width) */
+@media (max-width: 768px) {
+    .icon-list img {
+        max-width: 60%; /* Adjust the image width for better fit on smaller screens */
+    }
+}
