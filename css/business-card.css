@@ -28,8 +28,7 @@
 
 /* Media query for screens wider than 768px */
 @media (min-width: 769px) {
-    .business-card-images img,
-    .sns-icons img {
+    .business-card-images {
         flex-direction: row; /* Stack images vertically */
         align-items: center; /* Center images horizontally */
     }
