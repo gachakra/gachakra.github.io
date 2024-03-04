@@ -1,3 +1,5 @@
+
+
 /* Styles for SNS Icon Section */
 .sns-icons {
     text-align: center;
@@ -15,6 +17,13 @@
 
 .icon-list img {
     width: 80px; /* Adjust the size of the icons as needed */
+}
+
+@media (min-width: 769px) {
+    .icon-list img {
+        max-width: 45%;
+        margin-bottom: 20px; /* Add space between images on wider screens */
+    }
 }
 
 /* Media query for screens with a maximum width of 768px (typical smartphone width) */

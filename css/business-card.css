@@ -1,31 +1,17 @@
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-.business-card-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-.business-card-images {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 
-img {
+.business-card img {
     max-width: 100%; /* Ensure images scale properly */
 }
 
+/* Media query for screens with a maximum width of 768px (typical smartphone width) */
 @media (max-width: 768px) {
-    .business-card-images {
+    .business-card .images {
         flex-direction: column; /* Stack images vertically */
         align-items: center; /* Center images horizontally */
     }
 
-    img {
+    .business-card img {
         max-width: 80%; /* Adjust the image width for better fit on smaller screens */
         margin-bottom: 20px; /* Add space between images on smaller screens */
     }
@@ -33,18 +19,19 @@ img {
 
 /* Media query for screens wider than 768px */
 @media (min-width: 769px) {
-    .business-card-images {
+    .business-card .images {
         flex-direction: row; /* Stack images vertically */
         align-items: center; /* Center images horizontally */
     }
 
-    img{
+    .business-card img {
         max-width: 45%;
         margin-bottom: 20px; /* Add space between images on wider screens */
     }
 }
 
-.business-card-images {
+/* New styles for the images in the new section */
+.business-card .images {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
