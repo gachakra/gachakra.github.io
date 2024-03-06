@@ -15,3 +15,13 @@
   width: 100%;
   height: auto;
 }
+
+.some-doodle-works h2 {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .mm-columns__img {
+    width: 90%;
+  }
+}
